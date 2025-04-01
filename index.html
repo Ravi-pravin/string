@@ -20,40 +20,71 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col d-flex align-items-center justify-content-center">
-                        <form class="calculator bg-dark rounded p-4">
-                            <div class="form-group resultbox rounded d-flex align-items-center justify-content-center flex-column m-3">
+                        <form class="calculator rounded p-4">
+                            <div
+                                class="form-group resultbox rounded d-flex align-items-center justify-content-center flex-column m-3">
                                 <h3>String</h3>
                                 <input id="result" class="form-control Outputbox" readonly>
                             </div>
                             <div class="userinputbox p-1 rounded">
+                                <!-- <div class="modebtn">
+                                    <button id="modeToggle" class="btn">Light Mode</button>
+                                </div> -->
                                 <div class="form-group d-flex align-items-center justify-content-center flex-column">
                                     <h5>Enter your string</h5>
                                     <div class="inputbox d-flex align-items-center justify-content-center">
-                                        <input type="text" id="inputString" class="form-control m-1" placeholder="Enter a string">
+                                        <input type="text" id="inputString" class="form-control m-1"
+                                            placeholder="Enter a string">
                                     </div>
                                 </div>
                                 <div class="stringbox">
                                     <div class="row1 d-flex align-items-center justify-content-center">
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="getLength()">Length</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="replaceText()">Replace</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="indexOf()">Index Of</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="startsWith()">Start With</button>
+                                        <div class="box1">
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="getLength()">Length</button>
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="replaceText()">Replace</button>
+                                        </div>
+                                        <div class="box2">
+                                            <button type="button" class="stringbtn m-1 ml-2" onclick="indexOf()">Index
+                                                Of</button>
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="startsWith()">Start With</button>
+                                        </div>
                                     </div>
                                     <div class="row2 d-flex align-items-center justify-content-center">
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="endsWith()">End With</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="toUpperCase()">Uppercase</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="toLowerCase()">Lowercase</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="repeatText()">Repeat</button>
+                                        <div class="box1">
+                                            <button type="button" class="stringbtn m-1 ml-2" onclick="endsWith()">End
+                                                With</button>
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="toUpperCase()">Uppercase</button>
+                                        </div>
+                                        <div class="box2">
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="toLowerCase()">Lowercase</button>
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                                onclick="repeatText()">Repeat</button>
+                                        </div>
                                     </div>
                                     <div class="row3 d-flex align-items-center justify-content-center">
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="matchText()">Match</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="searchText()">Search</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="concatText()">Concat</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="splitText()">Split</button>
+                                        <div class="box1">
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="matchText()">Match</button>
+                                        <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="searchText()">Search</button>
+                                        </div>
+                                        <div class="box2">
+                                            <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="concatText()">Concat</button>
+                                        <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="splitText()">Split</button>
+                                        </div>
                                     </div>
                                     <div class="row4 d-flex align-items-center justify-content-center">
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="trimText()">Trim</button>
-                                        <button type="button" class="stringbtn m-1 ml-2" onclick="sliceText()">Slice</button>
+                                        <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="trimText()">Trim</button>
+                                        <button type="button" class="stringbtn m-1 ml-2"
+                                            onclick="sliceText()">Slice</button>
                                     </div>
                                 </div>
                                 <div class="div d-flex align-items-center justify-content-center m-3">

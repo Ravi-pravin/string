@@ -72,13 +72,26 @@ document.querySelectorAll(".stringbtn").forEach(button => {
             default:
                 alert("Invalid operation!");
         }
-
         updateResult(result);
     });
 });
+
+
 
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
     document.getElementById("inputString").value = "";
     updateResult("");
 });
+
+
+
+// document.getElementById("modeToggle").addEventListener("click", function () {
+//     document.body.classList.toggle("dark-mode");
+    
+//     if (document.body.classList.contains("dark-mode")) {
+//         this.textContent = "Dark Mode";
+//     } else {
+//         this.textContent = "Light Mode";
+//     }
+// });
